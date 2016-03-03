@@ -2,7 +2,7 @@ let configs = {
   local: {
     env: 'local',
     hostname: 'localhost',
-    port: 3000,
+    port: process.env.PORT || 3000,
     app: {
       name: 'FCC Timestamp Service | Local',
     },
@@ -10,7 +10,7 @@ let configs = {
   test: {
     env: 'test',
     hostname: process.env.HOSTNAME || 'localhost',
-    port: 3000,
+    port: process.env.PORT || 3000,
     app: {
       name: 'FCC Timestamp Service | Test',
     },
@@ -18,7 +18,7 @@ let configs = {
   production: {
     env: 'production',
     hostname: process.env.HOSTNAME || 'localhost',
-    port: process.env.PORT || 30001,
+    port: process.env.PORT || 5000,
     app: {
       name: 'FCC Timestamp Service',
     },
