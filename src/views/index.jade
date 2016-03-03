@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 FCC Timestamp Microservice
+  
+  h2 Instructions
+  .ui.bulleted.list
+    .item Pass either a natural language date (January 15 2016) or unix timestamp (1452834000) to the following API.
+    .item If it is a valid date it will return the unix timestamp and the natural language form of the date.
+    .item If it is not a valid date it will return null for both of those properties.
+    
+  h2 Examples
+  .ui.relaxed.list
+    .item /January 15 2016 -> {"unix": "1452834000", "natural": "January 15, 2016"}
+    .item /1454130000 -> {"unix": "1452834000", "natural": "January 15, 2016"}
+    .item /30 2016 -> {"unix": null, "natural": null}
