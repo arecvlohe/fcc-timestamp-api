@@ -12,6 +12,18 @@ block content
     
   h2 Examples
   .ui.relaxed.list
-    .item http://fcc-timestamp-service.herokuapp.com/January 15 2016 will return {"unix": "1452834000", "natural": "January 15, 2016"}
-    .item http://fcc-timestamp-service.herokuapp.com/1454130000 will return {"unix": "1452834000", "natural": "January 15, 2016"}
-    .item http://fcc-timestamp-service.herokuapp.com/30 2016 will return {"unix": null, "natural": null}
+    .item
+      b http://fcc-timestamp-service.herokuapp.com/January 15 2016 
+      | will return
+      br
+      em {"unix": "1452834000", "natural": "January 15, 2016"}
+    .item 
+      b http://fcc-timestamp-service.herokuapp.com/1454130000 
+      | will return
+      br
+      em {"unix": "1452834000", "natural": "January 15, 2016"}
+    .item 
+      b http://fcc-timestamp-service.herokuapp.com/30 2016 
+      | will return 
+      br
+      em {"unix": null, "natural": null}
