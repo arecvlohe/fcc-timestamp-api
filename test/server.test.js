@@ -14,4 +14,10 @@ describe('server', () => {
       done();
     });
   });
+  it('should return 400 to GET /*/*', done => {
+    http.get('http://localhost:3000/abcdefg/abcdef', res => {
+      expect(res.statusCode).toEqual(400);
+      done();
+    });
+  });
 });
